@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>TS Project</title>
+</head>
+<body>
+ <div class="main-container">   
+         <h1>Weather App</h1>
+         <form action="" onsubmit="return false">
+             <input type="text"  id="search" spellcheck="false" placeholder="Enter city name" required>
+             <input type="submit" value="Search" class="btn">
+             <p class="error" style="color:rgb(243, 10, 10);"></p>
+         </form>
+         <section id="details">
+             <a class="arrow-back" href="#">
+                 <i class='fas fa-arrow-left' style='font-size:36px'></i>
+                 <span>back</span>
+            </a>
+            <div class="current">
+                <div class="date">Saturday, sept 25, 2021</div>
+                <div class="con-icon">
+                    <img id="wth-icon" alt="">
+                </div>
+                <div class="temp">
+                    <span class="num"></span>
+                    <span class="deg">°</span>
+                    <span>C</span>
+                 </div>
+                 <div class="location">
+                    <i class="bx bx-map"></i>
+                    <span class="city"></span>
+                 </div>
+                 <div class="weather"></div>
+                 <div class="rang"></div>
+             </div>
+         </section>
+ </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
