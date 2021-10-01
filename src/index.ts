@@ -63,5 +63,5 @@ function GetDate(){
     var d = days[dates.getDay()];
     var currentDay = dates.getDate();
 
-    date.textContent = `${d},${m},${currentDay},${y}`;
+    date.textContent = `${d},${m} ${currentDay},${y}`;
 }
